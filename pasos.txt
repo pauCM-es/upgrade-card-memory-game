@@ -1,0 +1,32 @@
+1. en funcion del nivel:
+  - poner el numero de cartas sobre la mesa.✅
+  - de forma aleatoria hacer un array de esos characters (rickymortyAPI)
+
+2. crear los botones de level de forma dinamicame✅
+  - al clickar el boton limpia la mesa y carga tantas cartas como indica ese level.✅
+
+3. descubrir la imagen al clicar la carta. 
+  - cuando haya 2 cartas descubiertas que compare las imagenes.
+    > si son iguales sumar al contador y bloquearlas del juego
+      >> despues de sumar al contador comprobar si estan todas adivinadas para dar GAME OVER.
+        >>>Si GAME OVER === true => pintar al ganador
+    > si no son iguales volverles a dar la vuelta al cabo de x segundos.
+
+4. 2 jugadores: Seguimiento del turno y asi cuando se sumen puntos, se sumen a ese jugador.
+const players = [
+  {player: "Player 1" score: 0}
+  {player: "Player 2", score: 0}
+]
+poner una variable exterior para el seguimiento del turno??? let turn = "Player 1"
+
+5. temporizador por turno:
+  - cuando se acaba el tiempo:
+    > se dan la vuelta las cartas tal como esten.
+    > cambia de turno.
+    > se resetea el intervalo/temporizador
+
+6. estilar todo con SCSS
+
+7. poner que al cargar la pagina salga en primer plano el div con la seleccion
+de level en primer plano y al clicar haga la funcion de nivel (1. del listado) y 
+oculte el seleccionable. Se pofra acceder a el de nuevo desde un boton 🔆 (ruedita config.)

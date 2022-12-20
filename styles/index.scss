@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0
+}
+
+#root {
+  width: 100vw;
+  min-height: 90vh;
+  padding: 2rem 0;
+  background-color: rgb(33, 36, 86);
+  color: whitesmoke;
+  font-family: 'Lucida Sans', sans-serif;
+}
+
+.nav__level {
+  margin: 2rem;
+  display: flex;
+  
+  &--btn {
+    margin: 0.5rem;
+    width: 100px;
+    height: 30px;
+  }
+}
+
+.game-area {
+  width: 95%;
+  display: flex;
+  justify-content: space-evenly;
+  perspective: 800px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+
+  .card {
+    position: relative;
+    width: 20%;
+    max-width: 200px;
+    aspect-ratio: 2/3;
+    color: white;
+    cursor: pointer;
+
+    .card__face {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      // backface-visibility: hidden;
+      
+      img {
+          width: 90%;
+          height: inherit;
+          border: 1px solid black;
+          background-color: white;
+        }
+      
+      &--front {
+      z-index: 2;
+        img {
+          object-fit: contain;
+        }
+      }
+
+      &--back {
+      z-index: 3;
+      object-fit: cover;
+        
+      }
+    }
+  }
+}
+
+.display-none {
+  display: none;
+}
+
+
+
+

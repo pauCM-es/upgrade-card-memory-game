@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles/index.css">
+  <script src="index.js" defer></script>
+  <title>Cards</title>
+</head>
+<body>
+  <div id="root">
+    <section class="nav">
+      <div class="nav__title">
+        <span class="nav__config--btn">
+          <img src="./assets/config.png" alt="boton configuracion">
+        </span>
+        <h1>MEMORY GAME</h1> 
+        </div>
+      <div class="nav__level">
+        <h2>Select a Level:</h2>
+      </div>
+      <div class="nav__player">
+        <h2 class="nav__player--title">PLAYER 1</h2>
+        <div class="nav__player--score">
+          <span class="score">0</span>
+          <span class="pts"> pts.</span>
+        </div>
+      </div>
+      <div class="nav__timer">
+        <spna class="nav__timer--time">00</spna>
+        <spna class="nav__timer--sg"> sg</spna>
+      </div>
+      <div class="nav__player">
+        <h2 class="nav__player--title">PLAYER 2</h2>
+        <div class="nav__player--score">
+          <span class="score">0</span>
+          <span class="pts"> pts.</span>
+        </div>
+      </div>
+  
+    </section>
+    <section class="game-area">
+        <div class="card">
+          <div class="card__face card__face--front">
+            <img src="https://rickandmortyapi.com/api/character/avatar/1.jpeg" />
+          </div>
+          <div class="card__face card__face--back">
+            <img src="./assets/backCard.jpg" />
+          </div>
+        </div>
+    </section>
+  </div>
+</body>
+</html>
