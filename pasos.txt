@@ -1,11 +1,11 @@
 1. en funcion del nivel:
   - poner el numero de cartas sobre la mesa.✅
-  - de forma aleatoria hacer un array de esos characters (rickymortyAPI)
+  - de forma aleatoria hacer un array de esos characters (rickymortyAPI)✅
 
 2. crear los botones de level de forma dinamicame✅
   - al clickar el boton limpia la mesa y carga tantas cartas como indica ese level.✅
 
-3. descubrir la imagen al clicar la carta. 
+3. descubrir la imagen al clicar la carta. ✅
   - cuando haya 2 cartas descubiertas que compare las imagenes.
     > si son iguales sumar al contador y bloquearlas del juego
       >> despues de sumar al contador comprobar si estan todas adivinadas para dar GAME OVER.

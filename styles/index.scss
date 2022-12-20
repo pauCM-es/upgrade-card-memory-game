@@ -46,25 +46,26 @@
       left: 0;
       width: 100%;
       height: 100%;
+      background-color: white;
       // backface-visibility: hidden;
       
-      img {
-          width: 90%;
-          height: inherit;
-          border: 1px solid black;
-          background-color: white;
-        }
-      
       &--front {
-      z-index: 2;
+        z-index: 2;
+        display: flex;
+        justify-content: center;
         img {
+          width:90%;
           object-fit: contain;
         }
       }
-
+      
       &--back {
-      z-index: 3;
-      object-fit: cover;
+        z-index: 3;
+        width: 100%;
+
+        img {
+            height: 100%;
+          }
         
       }
     }
@@ -73,6 +74,11 @@
 
 .display-none {
   display: none;
+}
+
+.guessed {
+  scale: 0.8;
+  border: 5px solid yellowgreen
 }
 
 
